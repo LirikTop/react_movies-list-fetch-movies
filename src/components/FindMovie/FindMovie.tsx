@@ -53,6 +53,7 @@ export const FindMovie: React.FC<Props> = React.memo(
 
       if (movieCard && checkIncludes()) {
         onMovies([...movieList, movieCard]);
+        setMovieCard(null);
         // onMovies(data => [...data, movieCard]);
       }
     };
